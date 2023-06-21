@@ -1,0 +1,108 @@
+.work-category-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.work-category-img {
+  position: relative;
+  overflow: hidden;
+}
+.work-category-img:hover .work-layer {
+  transform: translateX(0);
+  left: 0;
+}
+.work-layer {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  /* transform: translateX(-100%); */
+}
+.categoty-work {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  font-family: "summer-ladies";
+}
+.view-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ef3a37;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: normal;
+  padding: 5px 10px;
+  text-transform: lowercase;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.view-work:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background: #fff;
+  border: none;
+}
+.work-category-img:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.work-category-img:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.work-category-img:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.work-category-img:nth-child(4) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.work-category-img:nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+@media screen and (max-width:1025px){
+.categoty-work{
+  font-size: 24px;
+}
+.view-work{
+  font-size: 15px;
+}
+}
+@media screen and (max-width:768px){
+  .work-category-img{
+    height: 12rem;
+    width: 100%;
+    max-width: 350px;
+  }
+  .work-category-img > img{
+    height: 100%;
+    width: 100%;
+  }
+  
+}

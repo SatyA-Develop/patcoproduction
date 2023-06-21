@@ -1,0 +1,155 @@
+.client-section {
+  padding: 5rem 7rem;
+  width: 100%;
+  background: #8e3ccb;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 5rem;
+  min-height: 28rem;
+  position: relative;
+  overflow: hidden;
+}
+.client-title {
+  position: relative;
+  height: 4rem;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "summer-ladies";
+  color: #ffd400;
+}
+.client-line {
+  position: absolute;
+  background: #fc59a3;
+  height: 3px;
+  width: 12.5rem;
+  border: none;
+  outline: none;
+  margin-top: 12px;
+  left: -7rem;
+}
+.client-circle {
+  position: absolute;
+  background: #fc59a3;
+  height: 12px;
+  width: 12px;
+  margin-top: 8px;
+  border-radius: 50%;
+  left: 5rem;
+}
+.clients-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.client-img-cont {
+  width: 100%;
+}
+
+.client-img {
+  width: 200px;
+  height: 150px;
+}
+
+.logo-slider1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 15s linear infinite;
+  position: absolute;
+  overflow: hidden;
+  gap: 30px;
+}
+.logo-slider2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5rem;
+  animation: scroll1 15s linear infinite;
+  position: absolute;
+  overflow: hidden;
+}
+.logo-cls {
+  height: 100px;
+  cursor: pointer;
+  margin: 0 40px;
+}
+.logo-slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.single-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.logo-slider1:hover,
+.logo-slider2:hover {
+  animation: none;
+}
+.logos-container {
+  overflow: hidden;
+  padding: 60px 0 0;
+  white-space: nowrap;
+}
+.logos-slide1 {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+.logos-slide2 {
+  display: inline-block;
+  animation: 10s slide1 infinite linear;
+}
+.logos-container:hover .logos-slide1 {
+  animation-play-state: paused;
+}
+.logos-container:hover .logos-slide2 {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide1 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .client-section {
+    padding: 5rem 3rem;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .client-section {
+    padding: 5rem 20px;
+    padding-bottom: 0;
+    min-height: unset;
+  }
+  .client-title {
+    font-size: 25px;
+  }
+  .logos-container {
+    padding: 15px 0 0;
+  }
+  .logo-cls {
+    height: 75px;
+    margin: 0 15px;
+  }
+}

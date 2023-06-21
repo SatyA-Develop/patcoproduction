@@ -1,0 +1,75 @@
+.work-section {
+  padding: 8rem 0rem;
+  width: 100%;
+  background: #d93b5b;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
+  min-height: 30rem;
+}
+.work-title {
+  position: relative;
+  height: 4rem;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "summer-ladies";
+  color: #fff;
+  z-index: 9;
+  margin-left: 7rem;
+}
+.work-line {
+  position: absolute;
+  background: #ffd400;
+  height: 3px;
+  width: 14rem;
+  border: none;
+  outline: none;
+  margin-top: 12px;
+  left: -7rem;
+}
+.work-circle {
+  position: absolute;
+  background: #ffd400;
+  height: 12px;
+  width: 12px;
+  margin-top: 8px;
+  border-radius: 50%;
+  left: 7rem;
+}
+
+.media-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 14rem);
+  width: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+.media-container > * {
+  cursor: pointer;
+}
+
+.media-container-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-section {
+    padding: 0;
+    padding-top: 5rem;
+  }
+  .work-title {
+    font-size: 26px;
+  }
+  .media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

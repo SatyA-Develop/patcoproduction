@@ -1,0 +1,79 @@
+.home-section{
+    background: #3853A4;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    /* position: fixed; */
+    left: 0;
+    /* height: 90vh; */
+    top: 0;
+}
+.hide-home{
+    display: none;
+}
+.video-container{
+    width: 100%;
+    /* position: relative; */
+    /* position: absolute; */
+    max-width: 1800px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-text{
+    position: absolute;
+    place-self: center;
+    color: #fff;
+    font-family: "summer-ladies";
+    font-weight: 400;
+    font-size: 64px;
+}
+.main-container{
+    display: flex;
+    gap: 40px;
+}
+.text-container{
+    display: flex;
+    gap: 3px;
+    position: relative;
+    width: 100%;
+}
+.text-container>*{
+    position: revert;
+    cursor: crosshair;
+}
+.text-container>*:hover{
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-30%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+@media screen and (max-width:1025px){
+    .main-container{
+        gap: 18px;
+    }
+    .text-container span{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:768px){
+    .home-section{
+       margin-top: 5rem;
+    }
+    .main-container{
+        gap: 10px;
+    }
+    .text-container span{
+        font-size: 1.5rem;
+    }
+}

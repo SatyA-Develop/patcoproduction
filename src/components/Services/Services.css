@@ -1,0 +1,138 @@
+.service-section {
+  display: flex;
+  gap: 2rem;
+  min-height: 50rem;
+  background: #8e3ccb;
+  padding: 8rem;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+.service-title {
+  position: relative;
+  height: 4rem;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "summer-ladies";
+  color: #ffd400;
+}
+.service-line {
+  position: absolute;
+  background: #fc59a3;
+  height: 3px;
+  width: 20vw;
+  border: none;
+  outline: none;
+  margin-top: 12px;
+}
+.service-circle {
+  position: absolute;
+  background: #fc59a3;
+  height: 12px;
+  width: 12px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+.service-contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+.service-content {
+  height: 261px;
+  width: 242px;
+  background: #f8f0da;
+  box-shadow: 11px 11px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 46px;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 5px;
+  overflow: hidden;
+  z-index: 99;
+}
+.content-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #223f77;
+}
+.content-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-top: 25px;
+  text-transform: lowercase;
+  font-weight: 500;
+  color: #223f77;
+  line-height: 133%;
+}
+.service-content-line {
+  height: 0px;
+  border: 3px solid #ef3a37;
+  width: 139px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.service-background {
+  text-align: right;
+  font-size: 200px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1025px) {
+  .service-section {
+    padding: 3rem;
+    padding-top: 7rem;
+  }
+  .service-background {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-section {
+    padding: 20px;
+    padding-top: 5rem;
+  }
+  .service-line {
+    min-width: 15rem;
+  }
+  .service-background {
+    font-size: 55px;
+    line-height: unset;
+  }
+}
+
+@media screen and (max-width:768px){
+.service-title{
+  font-size: 26px;
+}
+.service-content{
+  height: 202px;
+    width: 234px;
+}
+.content-title{
+  font-size: 15px;
+}
+.service-content-line {
+  width: 125px;
+  margin-top: 0px;
+}
+.content-para {
+  font-size: 10px;
+  margin-top: 12px;
+}
+}

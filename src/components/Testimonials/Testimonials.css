@@ -1,0 +1,251 @@
+.testimonial-section {
+  background: #8e3ccb;
+  min-height: 50rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding: 8rem 8rem;
+  gap: 5rem;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.testimonial-l {
+  flex: 1;
+}
+/* .t-box-bg {
+  box-shadow: -26px 22px 13px -3px rgba(0, 0, 0, 0.16);
+  border-radius: 33px;
+  height: 578px;
+  width: 374px;
+  top: 2.5rem;
+  left: 27rem;
+  opacity: 0;
+  position: absolute;
+} */
+.t-box-bg {
+  box-shadow: -26px 22px 13px -3px rgba(0, 0, 0, 0.16);
+  border-radius: 33px;
+  height: 465px;
+  width: 320px;
+  top: 3rem;
+  left: 30vw;
+  opacity: 0;
+  position: absolute;
+}
+/* .testimonial-box {
+  position: absolute;
+  left: 8rem;
+  top: 8rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 576px;
+  box-shadow: -15px 13px 16px rgba(0, 0, 0, 0.17);
+  border-radius: 36px;
+  padding: 40px;
+  height: 403px;
+  gap: 28px;
+} */
+.testimonial-box {
+    position: absolute;
+    left: 11vw;
+    top: 8rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 448px;
+    box-shadow: -15px 13px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 36px;
+    padding: 20px;
+    height: 312px;
+    gap: 15px;
+}
+.testi-img {
+  height: 63px;
+  width: 63px;
+}
+.t-desc {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 300;
+  line-height: 141%;
+}
+.testi-name {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: capitalize;
+  font-style: normal;
+  line-height: 141%;
+}
+.testi-position {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -1rem;
+  color: #ef3a37;
+}
+.testimonial-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 17rem;
+}
+.testimonial-title {
+  position: relative;
+  height: 4rem;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "summer-ladies";
+  color: #ffd400;
+  text-align: right;
+}
+.testimonial-line {
+  position: absolute;
+  background: #fc59a3;
+  height: 3px;
+  width: 25rem;
+  border: none;
+  outline: none;
+  margin-top: 12px;
+  right: 0;
+  margin-right: -10rem;
+}
+.testimonial-circle {
+  position: absolute;
+  background: #fc59a3;
+  height: 12px;
+  width: 12px;
+  margin-top: 8px;
+  border-radius: 50%;
+  right: 14.5rem;
+}
+.testimonial-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: italic;
+  font-weight: 600;
+  color: #fff;
+  text-align: right;
+}
+.control-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  color: #fff;
+}
+.arrow-box {
+  background: #fc59a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out linear;
+}
+.arrow-box:hover {
+  transform: translateY(-5px);
+  background: transparent;
+  border: 1px solid #fc59a3;
+}
+.arrow-box:hover .arrow-c {
+  transform: scale(0.6);
+}
+.arrow-c {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width:1025px){
+  .testimonial-section{
+    min-height: 57rem;
+  }
+.testimonial-r{
+  margin-top: 25rem;
+  gap: 1rem;
+}
+.t-box-bg{
+  left: 40vw;
+}
+.testimonial-title{
+  font-size: 38px;
+}
+.testimonial-line{
+  width: 22rem;
+}
+.testimonial-circle{
+  right: 11.5rem;
+}
+.testimonial-heading{
+  font-size: 30px;
+  line-height: 35px;
+}
+}
+@media screen and (max-width:768px){
+  .testimonial-section{
+    padding: 5rem 20px;
+    min-height: 50rem;
+    gap: 5rem;
+    padding-bottom: 5rem;
+    flex-direction: column-reverse;
+  }
+  .testimonial-l{
+    position: relative;
+  }
+  .testimonial-box{
+    left: 10px;
+    width: 250px;
+    height: 240px;
+    gap: 10px;
+    top: -12rem;
+  }
+  .testi-img {
+    height: 40px;
+    width: 40px;
+}
+.t-desc{
+  font-size: 10px;
+  line-height: unset;
+  font-weight: 500;
+}
+.testi-name{
+  font-size: 12px;
+  line-height: unset;
+}
+.testi-position{
+  font-size: 10px;
+  margin-top: -0.5rem;
+}
+.t-box-bg {
+  display: block;
+  width: 170px;
+  height: 305px;
+  left: 120px;
+  top: -14rem;
+}
+.testimonial-title{
+  font-size: 30px;
+}
+.testimonial-heading{
+  font-size: 20px;
+  line-height: 28px;
+}
+.testimonial-r{
+  margin-top: unset;
+  gap: 10px;
+}
+}
